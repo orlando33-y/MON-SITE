@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KYAHPHOTOGRAPHE — photographie qui garde vos moments vivants.">
+  <title>KYAHPHOTOGRAPHE — Des moments qui restent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Accueil KYAHPHOTOGRAPHE">
+      <span class="brand-mark">K</span>
+      <span>KYAHPHOTOGRAPHE</span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#galeri">Galerie</a>
+      <a href="#sou-mwen">À propos</a>
+      <a href="#kontak">Contact</a>
+    </nav>
+    <a class="header-contact" href="tel:+50946955819"><span class="status-dot"></span> +509 46 95 58 19</a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>01</span> Studio photo · Haïti</p>
+        <h1>Des moments<br><em>qui restent.</em></h1>
+        <p class="hero-text">Je raconte votre histoire avec la lumière, le mouvement et l'émotion. Chaque photo est faite pour vous faire revivre l'instant.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#galeri">Voir la galerie <i data-lucide="arrow-up-right"></i></a>
+          <a class="text-link" href="#kontak">Réserver une séance <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="hero-frame">
+          <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1400&q=85" alt="Personnes célébrant lors d'un événement" fetchpriority="high">
+          <span class="image-label">Port-au-Prince / 2024</span>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>Chercher la lumière.<br>Garder le vrai.</span></div>
+      </div>
+    </section>
+
+    <section class="marquee-band" aria-label="Services photo">
+      <div class="marquee-track"><span>PORTRAIT</span><b>✳</b><span>MARIAGE</span><b>✳</b><span>ÉVÉNEMENT</span><b>✳</b><span>IDENTITÉ</span><b>✳</b><span>PORTRAIT</span><b>✳</b><span>MARIAGE</span><b>✳</b></div>
+    </section>
+
+    <section class="gallery-section section-shell" id="galeri">
+      <div class="section-heading reveal">
+          <div><p class="eyebrow"><span>02</span> Mon travail</p><h2>Découvrez ce que<br><em>nous créons.</em></h2></div>
+        <p class="section-intro">Une sélection d'images tirées de quelques histoires que j'ai eu la chance de raconter.</p>
+      </div>
+      <button class="birthday-album reveal" type="button" data-filter="anniversaire" aria-controls="gallery-grid">
+        <span class="album-cover"><img src="WhatsApp Image.jpeg" alt="Aperçu de l'album anniversaire"></span>
+        <span class="album-copy"><span class="album-kicker">Album photo</span><strong>Anniversaire</strong><small>Voir les 4 photos</small></span>
+        <i data-lucide="arrow-up-right"></i>
+      </button>
+      <div class="filter-bar" role="group" aria-label="Filtre de la galerie">
+        <button class="filter-button active" data-filter="tout">Tout voir</button>
+        <button class="filter-button" data-filter="portrait">Portrait</button>
+        <button class="filter-button" data-filter="mariage">Mariage</button>
+        <button class="filter-button" data-filter="evenement">Événement</button>
+        <button class="filter-button" data-filter="anniversaire">Anniversaire</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid">
+        <figure class="gallery-item tall reveal" data-category="mariage"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85" alt="Couple de mariés dans un jardin"><figcaption><span>Mariage</span><strong>Le soleil après la pluie</strong></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="portrait"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85" alt="Portrait d'une femme à la lumière naturelle"><figcaption><span>Portrait</span><strong>Dans sa propre lumière</strong></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="evenement"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=85" alt="Foule lors d'un concert"><figcaption><span>Événement</span><strong>L'énergie de la foule</strong></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="anniversaire"><img src="WhatsApp Image 2026-09-24 at 8.00.16 AM.jpeg" alt="Portrait d'une femme pour un anniversaire"><figcaption><span>Anniversaire</span><strong>Un jour à retenir</strong></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="anniversaire"><img src="ciara.jpeg" alt="Portrait d'une femme en tenue blanche"><figcaption><span>Anniversaire</span><strong>Une présence remarquable</strong></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="anniversaire"><img src="WhatsApp Image.jpeg" alt="Portrait d'une femme avec une décoration florale"><figcaption><span>Anniversaire</span><strong>Élégance et lumière</strong></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="anniversaire"><img src="birthday.jpeg" alt="Portrait d'une femme élégante avec un chapeau"><figcaption><span>Anniversaire</span><strong>Une allure inoubliable</strong></figcaption></figure>
+        <figure class="gallery-item wide reveal" data-category="portrait"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1400&q=85" alt="Portrait d'un homme en extérieur"><figcaption><span>Portrait</span><strong>Un regard qui parle</strong></figcaption></figure>
+        <figure class="gallery-item reveal" data-category="mariage"><img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=85" alt="Détail d'une bague de mariage sur des fleurs"><figcaption><span>Mariage</span><strong>Petits détails, grandes émotions</strong></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="about-section section-shell" id="sou-mwen">
+      <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1100&q=85" alt="Photographe au travail avec son appareil"><span class="about-stamp">K /<br>PHOTO<br>STUDIO</span></div>
+      <div class="about-copy reveal reveal-delay"><p class="eyebrow"><span>03</span> Derrière l'objectif</p><h2>Des photos avec<br><em>une âme.</em></h2><p>Je suis K, une photographe qui aime les images authentiques. Qu'il s'agisse d'un mariage, d'un portrait ou d'un grand jour pour votre marque, je suis là pour observer les petits moments et les faire durer.</p><p>Mon travail mêle une direction simple à un regard toujours à la recherche du naturel.</p><a class="text-link" href="#kontak">Parlons de votre projet <i data-lucide="arrow-right"></i></a></div>
+    </section>
+
+    <section class="contact-section" id="kontak">
+      <div class="contact-inner section-shell">
+        <div><p class="eyebrow light"><span>04</span> Créons ensemble</p><h2>Vous avez une<br><em>histoire à raconter?</em></h2></div>
+        <div class="contact-details"><p>Écrivez-moi pour parler de votre projet, de la date et de toutes vos belles idées.</p><form class="contact-form" id="contact-form"><label>Votre nom<input name="name" type="text" required placeholder="Votre nom"></label><label>Date souhaitée<input name="date" type="date" required></label><label>Type de séance<select name="session" required><option value="">Choisir une séance</option><option>Anniversaire</option><option>Portrait</option><option>Mariage</option><option>Événement</option></select></label><label>Votre message<textarea name="message" rows="3" placeholder="Parlez-moi de votre projet..."></textarea></label><button class="button button-acid" type="submit">Envoyer sur WhatsApp <i data-lucide="arrow-up-right"></i></button></form><a class="contact-phone" href="tel:+50946955819">+509 46 95 58 19 <i data-lucide="arrow-up-right"></i></a><a class="contact-email" href="mailto:hello@kyahphotographe.com">hello@kyahphotographe.com</a><div class="socials"><a href="https://www.instagram.com/ciaradjy_xo" target="_blank" rel="noreferrer" aria-label="Instagram @ciaradjy_xo"><i data-lucide="camera"></i> @ciaradjy_xo</a><a href="https://www.tiktok.com/@jyah0.3" target="_blank" rel="noreferrer" aria-label="TikTok @jyah0.3"><i data-lucide="music-2"></i> @jyah0.3</a></div></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" aria-label="Photo en grand format">
+    <button class="lightbox-close" type="button" aria-label="Fermer la photo"><i data-lucide="x"></i></button>
+    <img class="lightbox-image" src="" alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <footer class="site-footer section-shell"><span>© 2024 KYAHPHOTOGRAPHE</span><span>Créé avec passion en Haïti</span><a href="#top">Retour en haut ↑</a></footer>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
